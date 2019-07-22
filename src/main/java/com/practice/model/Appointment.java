@@ -19,6 +19,7 @@ public class Appointment {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public int appId;
 	
+	@Column(name="apntm_date", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
 	public Date appDate;
 	
 	public String name;

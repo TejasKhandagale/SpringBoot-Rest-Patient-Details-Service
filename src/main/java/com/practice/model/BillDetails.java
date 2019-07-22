@@ -18,7 +18,7 @@ public class BillDetails {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	public int bid;
 	
-	@Column(name = "B_DATE")
+	@Column(name="B_DATE", columnDefinition="TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
 	public Date billDate;
 	
 	@Column(name = "B_TOTAL_AMOUNT")
